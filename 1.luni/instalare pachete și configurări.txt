@@ -1,0 +1,25 @@
+# instalare pachete
+# în shell se rulează
+
+# pip install nume_pachet
+
+pip install ipython
+
+
+# modalitățile de rulat python:
+# (suntem în shell de sistem)
+
+$ python # <-- deschide CLI
+$ python /cale/catre/fisier.py # <-- execută fișierul
+$ python -c 'from datetime import datetime; print(datetime.now())' # <-- execută stringul
+$ python -m http.server # <-- execută modulul
+$ python -m IPython # la fel, execută modulul
+
+
+
+# dacă în vscode vrem să înlocuim intepretorul default python
+# cu IPython, edităm settings.json și adăugăm:
+
+"python.terminal.launchArgs": [
+    "-m", "IPython", "--no-autoindent"
+],
